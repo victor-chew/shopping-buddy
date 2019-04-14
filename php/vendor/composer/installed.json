@@ -1,0 +1,122 @@
+[
+    {
+        "name": "php-on-couch/php-on-couch",
+        "version": "2.0.7",
+        "version_normalized": "2.0.7.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/PHP-on-Couch/PHP-on-Couch.git",
+            "reference": "410c3b7f5955dc499b6f4f6bb68c8601e544da45"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/PHP-on-Couch/PHP-on-Couch/zipball/410c3b7f5955dc499b6f4f6bb68c8601e544da45",
+            "reference": "410c3b7f5955dc499b6f4f6bb68c8601e544da45",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.6.0",
+            "vlucas/phpdotenv": "^2.4"
+        },
+        "require-dev": {
+            "phpcheckstyle/phpcheckstyle": "*",
+            "phpunit/phpunit": "5.5.*"
+        },
+        "time": "2018-11-26T02:16:32+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "PHPOnCouch\\": "src/",
+                "PHPOnCouch\\Exceptions\\": "src/Exceptions/",
+                "PHPOnCouch\\Adapter\\": "src/Adapter/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "GPL-3.0-or-later"
+        ],
+        "authors": [
+            {
+                "name": "Michael Bailly",
+                "email": "mickael.bailly@free.fr",
+                "homepage": "https://github.com/dready92/",
+                "role": "Developer"
+            },
+            {
+                "name": "Clemens Sahs",
+                "email": "clemens.sahs@slides-worker.org",
+                "homepage": "https://github.com/ClemensSahs",
+                "role": "Developer"
+            },
+            {
+                "name": "Alexis Côté",
+                "email": "alexiscote19@hotmail.com",
+                "homepage": "https://popojargo.github.io/",
+                "role": "Developer"
+            }
+        ],
+        "description": "CouchDB NoSQL database access in PHP",
+        "homepage": "https://github.com/PHP-on-Couch/PHP-on-Couch",
+        "keywords": [
+            "apache",
+            "couch",
+            "couchdb",
+            "db",
+            "driver",
+            "nosql"
+        ]
+    },
+    {
+        "name": "vlucas/phpdotenv",
+        "version": "v2.5.2",
+        "version_normalized": "2.5.2.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/vlucas/phpdotenv.git",
+            "reference": "cfd5dc225767ca154853752abc93aeec040fcf36"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/cfd5dc225767ca154853752abc93aeec040fcf36",
+            "reference": "cfd5dc225767ca154853752abc93aeec040fcf36",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.9"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "^4.8.35 || ^5.0"
+        },
+        "time": "2018-10-30T17:29:25+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "2.5-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Dotenv\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD-3-Clause"
+        ],
+        "authors": [
+            {
+                "name": "Vance Lucas",
+                "email": "vance@vancelucas.com",
+                "homepage": "http://www.vancelucas.com"
+            }
+        ],
+        "description": "Loads environment variables from `.env` to `getenv()`, `$_ENV` and `$_SERVER` automagically.",
+        "keywords": [
+            "dotenv",
+            "env",
+            "environment"
+        ]
+    }
+]

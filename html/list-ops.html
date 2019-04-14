@@ -1,0 +1,43 @@
+<ons-page id="page-list-ops">
+	<ons-toolbar>
+		<div class="left"><ons-back-button>Back</ons-back-button></div>
+		<div class="center" id="id-page-title">{title}</div>
+		<div class="right">
+			<ons-toolbar-button id="id-submit">
+				<ons-icon icon="md-check"></ons-icon>
+			</ons-toolbar-button>
+		</div>
+	</ons-toolbar>
+	<ons-progress-bar id="id-loading"></ons-progress-bar>
+	<div id="id-section-open">
+		<div class="card">
+			<div class="center">
+				<ons-input id="id-access-code" type="text" maxlength="4" placeholder="Enter quick access code (4 chars)" float"></ons-input>
+			</div>
+		</div>
+		<p align="center">or</p>
+	</div>
+	<div class="card">
+		<ons-list>
+			<ons-list-item modifier="nodivider">
+				<div class="center">
+					<ons-input id="id-list-name" type="text" placeholder="List name (&gt;=10 chars; case-sensitive)" float></ons-input>
+				</div>
+			</ons-list-item>
+			<ons-list-item modifier="nodivider">
+				<div class="center">
+					<ons-input id="id-list-pin" type="text" placeholder="Access PIN (&gt;= 4 chars; case-sensitive)" float"></ons-input>
+				</div>
+			</ons-list-item>
+		</ons-list>
+	</div>
+	<div id="id-section-settings" class="card">
+		<button id="id-get-code" class="button">Generate quick access code</button>
+		<div id="id-section-get-code" class="card__content">
+			<p>Your quick access code to this list is:</p>
+			<p id="id-code-value" class="code-value">----</p>
+			<p>This code is valid for <span id="id-countdown" class="code-countdown">-:--</span> minutes.</p>
+			<p>On another device, select "Open existing list", then enter this code to open the list.</p>
+		</div>
+	</div>
+</ons-page>
