@@ -9,10 +9,10 @@ Shopping Buddy has so far been tested on Chrome (Windows, Android) and Safari (i
 A production demo can be found at [https://shop.randseq.org/](https://shop.randseq.org/)
 
 # Screenshots
-![Screenshot](https://shop.randseq.org/screenshots/screenshot01.png "Screenshot")
-![Screenshot](https://shop.randseq.org/screenshots/screenshot02.png "Screenshot")
-![Screenshot](https://shop.randseq.org/screenshots/screenshot03.png "Screenshot")
-![Screenshot](https://shop.randseq.org/screenshots/screenshot04.png "Screenshot")
+![Screenshot](https://shop.randseq.org/screenshots/screenshot01.png "Screenshot 1")
+![Screenshot](https://shop.randseq.org/screenshots/screenshot02.png "Screenshot 2")
+![Screenshot](https://shop.randseq.org/screenshots/screenshot03.png "Screenshot 3")
+![Screenshot](https://shop.randseq.org/screenshots/screenshot04.png "Screenshot 4") 
 
 # Libraries used
 
