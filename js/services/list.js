@@ -31,6 +31,7 @@ sbApp.services.list = {
 		console.log('syncWithRemoteDb');
 		this.syncFunc = sbApp.ldb.sync(sbApp.rdb, {
 			live: true,
+			retry: true,
 		}).on('error', (err) => {
 			console.log(err);
 			setTimeout(this.syncWithRemoteDb, 15000);
