@@ -20,7 +20,7 @@ sbApp.services.history = {
 		this.doc.items.push(item.longtitle);
 		sbApp.util.sort(this.doc.items);
 		this.doc.items = sbApp.util.unique(this.doc.items);
-		if (this.doc.items.length > 50) this.doc.items = this.doc.items.slice(0, 30);
+		if (this.doc.items.length > 100) this.doc.items = this.doc.items.slice(0, 100);
 
 		if (item.tags.length > 0) {
 			this.doc.tags = item.tags.concat(this.doc.tags);
