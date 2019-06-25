@@ -25,7 +25,7 @@ sbApp.services.history = {
 		if (item.tags.length > 0) {
 			this.doc.tags = item.tags.concat(this.doc.tags);
 			this.doc.tags = sbApp.util.unique(this.doc.tags);
-			this.doc.tags = this.doc.tags.slice(0, 8);
+			this.doc.tags = this.doc.tags.slice(0, 16);
 			sbApp.util.sort(this.doc.tags);
 		}
 		

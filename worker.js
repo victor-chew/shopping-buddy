@@ -1,6 +1,6 @@
 "use strict";
 
-var VERSION = 'r0148';
+var VERSION = 'r0149';
 
 self.importScripts('./js/lib/idb-keyval-iife-3.2.0.min.js');
 self.importScripts('./js/lib/pouchdb-7.0.0.min.js');

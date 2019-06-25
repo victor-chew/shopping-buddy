@@ -1,7 +1,7 @@
 "use strict";
 
 window.sbApp = {
-	version: 'r0148',
+	version: 'r0149',
 	controllers: {},
 	services: {},
 	util: {},
