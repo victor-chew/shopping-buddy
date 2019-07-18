@@ -65,6 +65,16 @@ ons-splitter-side[side="left"][animation="overlay"] {
 	font-weight: bold;
 }
 
+a.outlink:link, a.outlink:visited {
+	color: orange;
+	text-decoration: none;
+}
+
+a.outlink:hover, a.outlink.active {
+	color: orange;
+	text-decoration: underline;
+}
+
 /********************
  *** Animation CSS ***
  ********************/
