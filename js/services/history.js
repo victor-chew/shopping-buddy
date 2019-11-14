@@ -3,7 +3,8 @@
 sbApp.services.history = {
 
 	doc: null,
-	limit: 5,
+	itemsToKeep: 100,
+	tagsToKeep: 16,
 
 	init: async function() {
 		this.doc = { _id: 'history', items: [], tags: [] };
@@ -19,14 +20,14 @@ sbApp.services.history = {
 		let item = sbApp.services.list.parseItem(title);
 
 		this.doc.items.unshift(item.longtitle);
-		if (this.doc.items.length > this.limit) this.doc.items = this.doc.items.slice(0, this.limit);
+		if (this.doc.items.length > this.itemsToKeep) this.doc.items = this.doc.items.slice(0, this.itemsToKeep);
 		sbApp.util.sort(this.doc.items);
 		this.doc.items = sbApp.util.unique(this.doc.items);
 
 		if (item.tags.length > 0) {
 			this.doc.tags = item.tags.concat(this.doc.tags);
 			this.doc.tags = sbApp.util.unique(this.doc.tags);
-			this.doc.tags = this.doc.tags.slice(0, 16);
+			this.doc.tags = this.doc.tags.slice(0, tagsToKeep);
 			sbApp.util.sort(this.doc.tags);
 		}
 		
