@@ -2,9 +2,9 @@
 
 sbApp.services.history = {
 
+	ITEMS_TO_KEEP: 100,
+	TAGS_TO_KEEP: 16,
 	doc: null,
-	itemsToKeep: 100,
-	tagsToKeep: 16,
 
 	init: async function() {
 		this.doc = { _id: 'history', items: [], tags: [] };
@@ -20,14 +20,13 @@ sbApp.services.history = {
 		let item = sbApp.services.list.parseItem(title);
 
 		this.doc.items.unshift(item.longtitle);
-		if (this.doc.items.length > this.itemsToKeep) this.doc.items = this.doc.items.slice(0, this.itemsToKeep);
-		sbApp.util.sort(this.doc.items);
+		if (this.doc.items.length > this.ITEMS_TO_KEEP) this.doc.items = this.doc.items.slice(0, this.ITEMS_TO_KEEP);
 		this.doc.items = sbApp.util.unique(this.doc.items);
 
 		if (item.tags.length > 0) {
 			this.doc.tags = item.tags.concat(this.doc.tags);
 			this.doc.tags = sbApp.util.unique(this.doc.tags);
-			this.doc.tags = this.doc.tags.slice(0, this.tagsToKeep);
+			this.doc.tags = this.doc.tags.slice(0, this.TAGS_TO_KEEP);
 			sbApp.util.sort(this.doc.tags);
 		}
 		
