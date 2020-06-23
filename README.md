@@ -6,7 +6,9 @@ This app lets you create shared shopping lists. Edits are synchronized in real-t
 
 Shopping Buddy has so far been tested on Chrome (Windows, Android) and Safari (iOS).
 
-A production demo can be found at [https://shop.randseq.org/](https://shop.randseq.org/)
+# Live Demo
+
+* [https://shop.randseq.org/](https://shop.randseq.org/)
 
 # Screenshots
 ![Screenshot](https://shop.randseq.org/screenshots/screenshot01.png "Screenshot 1")
